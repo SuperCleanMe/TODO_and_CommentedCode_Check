@@ -4,7 +4,7 @@
 passed=1
 
 
-todos=$(egrep -rn "TODO|todo|to-do" *)
+todos=$(egrep -rn "TODO|todo|to-do|FIXME|fix-me|fixme" *)
 case $? in
     0) echo $todos && passed=0;;
     *) echo "No TODO's found";;

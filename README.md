@@ -6,6 +6,9 @@ TODO's are considered:
  - `todo`
  - `TODO`
  - `to-do`
+ - `FIXME`
+ - `fix-me`
+ - `fixme`
 
 Commented out code is any single comment in a `.py` file that could be considered code
 E.x.:
