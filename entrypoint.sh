@@ -11,12 +11,12 @@ case $? in
 esac
 
 
-commented_code=$(egrep -rn  "# " *.py > a && egrep -rn "#" *.py > b && diff -c a b | grep  "+" && rm a && rm b)
+commented_code=$(egrep -rn  "// " *.* > a && egrep -rn "// " *.* > b && diff -c a b | grep  "+" && rm a && rm b)
 # 2 is no .py # 1 is no commented code 0 is commented code
 
 case $? in
     1) echo "No commented out code found" ;;
-    2) echo "No .py files to check in project" ;;
+    2) echo "No . files to check in project" ;;
     0) echo $commented_code && passed=0 ;;
 esac
 
